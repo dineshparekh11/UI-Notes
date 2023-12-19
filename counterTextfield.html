@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <textarea id="msg" cols="50" rows="10" maxlength="100" onkeyup="messageCounter()"></textarea><br>
+    <span id="chars">100 </span> characters remained
+    
+    <script>
+        function messageCounter(){
+            var message = document.getElementById('msg').value;
+            var no_of_chars_in_msg = message.length;
+            var max_allowed_chars = 100;
+            var remain_chars = max_allowed_chars - no_of_chars_in_msg;
+            document.getElementById('chars').innerHTML = remain_chars;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div >
+        Email<input id="text" type="text"><br>
+        Password<input id="text" type="text"><br>
+        <button id="btn" onclick="Submit()">Submit</button>
+    </div>
+    <script>
+    function Submit(){
+    document.getElementsByTagName('div').innerHTML = "<h2>Login successfully!</h2>"
+    }
+    </script>
+</body>
+</html>
